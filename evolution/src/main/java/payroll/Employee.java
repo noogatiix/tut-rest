@@ -1,20 +1,23 @@
 package payroll;
 
-import java.util.Objects;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Objects;
 
 @Entity
 class Employee {
 
-	private @Id @GeneratedValue Long id;
+	// fake comment
+	private @Id
+	@GeneratedValue
+	Long id;
 	private String firstName;
 	private String lastName;
 	private String role;
 
-	Employee() {}
+	Employee() {
+	}
 
 	Employee(String firstName, String lastName, String role) {
 
